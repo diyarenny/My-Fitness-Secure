@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="#ECECEC">
+
+    <item
+        android:id="@+id/actionHome"
+        android:icon="@drawable/ic_home"
+        android:title="Home" />
+
+    <item
+        android:id="@+id/actionSchedule"
+        android:icon="@drawable/ic_schedule"
+        android:title="Schedule" />
+
+
+    <item
+        android:id="@+id/actionFoodDiary"
+        android:icon="@drawable/ic_food_diary"
+        android:title="Food Diary"/>
+
+    <item
+        android:id="@+id/actionFavorites"
+        android:icon="@drawable/ic_favorites"
+        android:title="Favorites"/>
+</menu>

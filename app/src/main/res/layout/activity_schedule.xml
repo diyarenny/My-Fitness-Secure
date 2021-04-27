@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="#F4F4F4"
+    tools:context=".ScheduleActivity">
+
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="wrap_content"
+        android:background="#6B2DBB"
+        android:layout_height="198dp">
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_marginLeft="16dp"
+                android:orientation="vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/titlepage"
+                    android:layout_marginTop="20dp"
+                    android:textSize="32sp"
+                    android:textColor="#FFF"
+                    android:text="Workout Reminders"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:id="@+id/subtitlepage"
+                    android:textSize="18sp"
+                    android:textColor="@color/whiteTransparentHalf"
+                    android:layout_marginTop="8dp"
+                    android:text="Finish Them Quickly Today"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/btnAddNew"
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="5dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="30dp"
+                android:background="@drawable/btnnew"
+                android:gravity="center_horizontal"
+                android:text="+"
+                android:textAlignment="center"
+                android:textColor="#FFF"
+                android:textSize="38sp" />
+
+        </LinearLayout>
+
+        <View
+            android:layout_marginTop="20dp"
+            android:layout_width="match_parent"
+            android:background="#131E69"
+            android:layout_height="1dp" />
+
+    </LinearLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/reminders"
+        android:layout_width="match_parent"
+        android:layout_marginTop="-60dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_height="wrap_content">
+
+    </androidx.recyclerview.widget.RecyclerView>
+
+    <TextView
+        android:id="@+id/endpage"
+        android:layout_width="match_parent"
+        android:layout_height="400dp"
+        android:layout_marginTop="20dp"
+        android:gravity="center_horizontal"
+        android:text="No Reminders"
+        android:textAlignment="center"
+        android:textColor="#9A9A9A"
+        android:textSize="16sp" />
+
+
+
+</LinearLayout>

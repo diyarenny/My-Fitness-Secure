@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="nav_user_photo" type="id" />
+    <item name="nav_user_mail" type="id" />
+    <item name="nav_username" type="id" />
+</resources>
