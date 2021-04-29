@@ -30,10 +30,19 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".MessageActivity"></activity>
-        <activity
-            android:name=".ChatMainActivity"
-            android:parentActivityName=".HomeActivity" />
+        <activity android:name=".TuckJumpAct"></activity>
+        <activity android:name=".ThrustersAct" />
+        <activity android:name=".AdvancedLevelActivity" />
+        <activity android:name=".WalkingLungesAct" />
+        <activity android:name=".CobWorkoutAct" />
+        <activity android:name=".GluteBridgeAct" />
+        <activity android:name=".ModerateLevelActivity" />
+        <activity android:name=".ScissorsXAct" />
+        <activity android:name=".BttflyCrunchAct" />
+        <activity android:name=".BeginnerLevelActivity" />
+        <activity android:name=".SquatsAct" />
+        <activity android:name=".WorkoutAct" />
+        <activity android:name=".WorkoutMainActivity" />
         <activity android:name=".NotificationPosts" />
         <activity
             android:name=".FoodActivity"

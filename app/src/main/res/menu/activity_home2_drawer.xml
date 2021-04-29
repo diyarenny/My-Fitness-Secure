@@ -13,18 +13,19 @@
             android:id="@+id/nav_profile"
             android:icon="@drawable/ic_person_black_24dp"
             android:title="Profile" />
+
         <item
-            android:id="@+id/nav_reminders"
-            android:icon="@drawable/ic_baseline_access_alarm_24"
-            android:title="Reminders" />
-        <item
-            android:id="@+id/nav_chat"
-            android:icon="@drawable/ic_baseline_chat_24"
-            android:title="Chats" />
+            android:id="@+id/nav_workout"
+            android:icon="@drawable/ic_baseline_fitness_center_24"
+            android:title="Workouts" />
         <item
             android:id="@+id/nav_step_counter"
             android:icon="@drawable/ic_baseline_accessibility_24"
             android:title="Step Counter" />
+        <item
+            android:id="@+id/nav_reminders"
+            android:icon="@drawable/ic_baseline_access_alarm_24"
+            android:title="Reminders" />
         <item
             android:id="@+id/nav_signout"
             android:icon="@drawable/ic_exit_to_app_black_24dp"

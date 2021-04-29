@@ -330,10 +330,10 @@ public class HomeActivity extends AppCompatActivity
 
             //getSupportActionBar().setTitle("Reminders");
             startActivity(new Intent(getApplicationContext(), ScheduleActivity.class));
-        } else if (id == R.id.nav_chat) {
+        } else if (id == R.id.nav_workout) {
 
-                //getSupportActionBar().setTitle("Food Diary");
-                startActivity(new Intent(getApplicationContext(), ChatMainActivity.class));
+                //getSupportActionBar().setTitle("Workout");
+                startActivity(new Intent(getApplicationContext(), WorkoutMainActivity.class));
         } else if (id == R.id.nav_step_counter) {
 
             //getSupportActionBar().setTitle("Step Counter");
