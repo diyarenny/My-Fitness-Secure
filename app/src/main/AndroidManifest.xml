@@ -22,6 +22,7 @@
     <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
     <uses-permission android:name="android.permission.GET_ACCOUNTS" />
     <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+    <uses-permission android:name="android.permission.USE_BIOMETRIC" />
 
     <application
         android:allowBackup="true"
@@ -30,7 +31,9 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".TuckJumpAct"></activity>
+        <activity android:name=".BiometricAuthActivity"></activity>
+        <activity android:name=".LoginActivity" />
+        <activity android:name=".TuckJumpAct" />
         <activity android:name=".ThrustersAct" />
         <activity android:name=".AdvancedLevelActivity" />
         <activity android:name=".WalkingLungesAct" />
@@ -72,7 +75,7 @@
         <activity
             android:name=".ProfileActivity"
             android:parentActivityName=".HomeActivity" />
-        <activity android:name=".LoginActivity">
+        <activity android:name=".InroductionAnimationActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
