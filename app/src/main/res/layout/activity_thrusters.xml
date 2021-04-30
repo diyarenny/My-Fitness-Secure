@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/white"
-    tools:context=".BeginnerLevelActivity">
+    tools:context=".ThrustersAct">
 
     <LinearLayout
         android:id="@+id/fitone"
@@ -70,8 +70,8 @@
 
     <TextView
         android:id="@+id/subintropage"
-        android:layout_width="366dp"
-        android:layout_height="206dp"
+        android:layout_width="296dp"
+        android:layout_height="257dp"
         android:layout_marginStart="24dp"
         android:layout_marginLeft="24dp"
         android:layout_marginTop="8dp"

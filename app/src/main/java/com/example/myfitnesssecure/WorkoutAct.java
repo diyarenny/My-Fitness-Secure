@@ -137,6 +137,14 @@ public class WorkoutAct extends AppCompatActivity {
 
 
 
+    }
 
+
+    @Override
+    public void onBackPressed() {
+        super.onBackPressed();
+        finish();
+        Intent i = new Intent(WorkoutAct.this, HomeActivity.class);
+        startActivity(i);
     }
 }

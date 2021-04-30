@@ -1,6 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.example.myfitnesssecure">
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.example.myfitnesssecure"
+    tools:ignore="MissingLeanbackLauncher">
 
     <uses-feature
         android:name="android.hardware.sensor.stepcounter"
@@ -8,6 +10,12 @@
     <uses-feature
         android:name="android.hardware.sensor.stepdetector"
         android:required="true" />
+    <uses-feature
+        android:name="android.hardware.touchscreen"
+        android:required="false" />
+    <uses-feature
+        android:name="android.software.leanback"
+        android:required="false" />
 
     <uses-permission android:name="android.permission.ACTIVITY_RECOGNITION" />
     <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
@@ -31,7 +39,14 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".BiometricAuthActivity"></activity>
+        <activity android:name=".ActivityGymsNearMyLocation" />
+
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="@string/google_maps_key" />
+        
+
+        <activity android:name=".BiometricAuthActivity" />
         <activity android:name=".LoginActivity" />
         <activity android:name=".TuckJumpAct" />
         <activity android:name=".ThrustersAct" />

@@ -111,4 +111,13 @@ public class AdvancedLevelActivity extends AppCompatActivity {
         timerValue.setText(timeLeft);
     }
 
+
+    @Override
+    public void onBackPressed() {
+        super.onBackPressed();
+        finish();
+        Intent i = new Intent(AdvancedLevelActivity.this, WorkoutAct.class);
+        startActivity(i);
+    }
+
 }

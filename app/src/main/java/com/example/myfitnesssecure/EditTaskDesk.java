@@ -96,4 +96,13 @@ public class EditTaskDesk extends AppCompatActivity {
             }
         });
     }
+
+
+    @Override
+    public void onBackPressed() {
+        super.onBackPressed();
+        finish();
+        Intent i = new Intent(EditTaskDesk.this, ScheduleActivity.class);
+        startActivity(i);
+    }
 }

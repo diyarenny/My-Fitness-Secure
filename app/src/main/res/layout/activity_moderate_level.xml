@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/white"
-    tools:context=".BeginnerLevelActivity">
+    tools:context=".AdvancedLevelActivity">
 
     <LinearLayout
         android:id="@+id/fitone"
@@ -70,17 +70,17 @@
 
     <TextView
         android:id="@+id/subintropage"
-        android:layout_width="340dp"
-        android:layout_height="wrap_content"
+        android:layout_width="280dp"
+        android:layout_height="200dp"
         android:layout_marginStart="24dp"
+        android:layout_marginLeft="24dp"
         android:layout_marginTop="8dp"
         android:lineSpacingExtra="8dp"
         android:text="Keep your upper body straight and legs apart. Then shift your weight in a slow to the side over a bent knee and stretch along the inner thigh of the opposite leg, which should be straight as you push your weight to the bent-knee side."
         android:textColor="@color/grey"
         android:textSize="18sp"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/intropage"
-        android:layout_marginLeft="24dp" />
+        app:layout_constraintTop_toBottomOf="@+id/intropage" />
 
 
 

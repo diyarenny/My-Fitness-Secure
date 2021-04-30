@@ -51,7 +51,7 @@ public class BiometricAuthActivity extends AppCompatActivity {
                 super.onAuthenticationSucceeded(result);
                 authStatusTv.setText("Authentication Succeeded!");
                 Toast.makeText(BiometricAuthActivity.this,"Authentication Succeeded!",Toast.LENGTH_SHORT).show();
-                startActivity(new Intent(getApplicationContext(), HomeActivity.class));
+                startActivity(new Intent(getApplicationContext(), LoginActivity.class));
 
             }
 

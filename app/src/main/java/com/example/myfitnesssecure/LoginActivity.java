@@ -115,7 +115,8 @@ public class LoginActivity extends AppCompatActivity {
                     FirebaseUser user = FirebaseAuth.getInstance().getCurrentUser();
 
                     if(user.isEmailVerified()){
-                        startActivity(new Intent(getApplicationContext(), BiometricAuthActivity.class));
+                        ///startActivity(new Intent(getApplicationContext(), BiometricAuthActivity.class));
+                        startActivity(new Intent(getApplicationContext(), HomeActivity.class));
                     }
                     else{
                         //verifies email

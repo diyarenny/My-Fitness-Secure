@@ -111,4 +111,13 @@ public class CobWorkoutAct extends AppCompatActivity {
         timerValue.setText(timeLeft);
     }
 
+
+    @Override
+    public void onBackPressed() {
+        super.onBackPressed();
+        finish();
+        Intent i = new Intent(CobWorkoutAct.this, WorkoutAct.class);
+        startActivity(i);
+    }
+
 }

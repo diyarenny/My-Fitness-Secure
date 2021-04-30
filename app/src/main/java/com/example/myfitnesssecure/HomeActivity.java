@@ -337,13 +337,23 @@ public class HomeActivity extends AppCompatActivity
         } else if (id == R.id.nav_step_counter) {
 
             //getSupportActionBar().setTitle("Step Counter");
-            startActivity(new Intent(getApplicationContext(), StepCounter.class));
+            FirebaseAuth.getInstance().signOut();
+            Intent stepsActivity = new Intent(getApplicationContext(),ActivityGymsNearMyLocation.class);
+            startActivity(stepsActivity);
+            finish();
+        }
+        else if (id == R.id.nav_nearestgyms) {
+
+            FirebaseAuth.getInstance().signOut();
+            Intent gymsActivity = new Intent(getApplicationContext(),ActivityGymsNearMyLocation.class);
+            startActivity(gymsActivity);
+            finish();
         }
         else if (id == R.id.nav_signout) {
 
             FirebaseAuth.getInstance().signOut();
-            Intent loginActivity = new Intent(getApplicationContext(),LoginActivity.class);
-            startActivity(loginActivity);
+            Intent logoutActivity = new Intent(getApplicationContext(),LoginActivity.class);
+            startActivity(logoutActivity);
             finish();
         }
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);

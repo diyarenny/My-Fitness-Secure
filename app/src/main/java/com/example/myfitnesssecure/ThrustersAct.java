@@ -111,4 +111,13 @@ public class ThrustersAct extends AppCompatActivity {
         timerValue.setText(timeLeft);
     }
 
+
+    @Override
+    public void onBackPressed() {
+        super.onBackPressed();
+        finish();
+        Intent i = new Intent(ThrustersAct.this, WorkoutAct.class);
+        startActivity(i);
+    }
+
 }

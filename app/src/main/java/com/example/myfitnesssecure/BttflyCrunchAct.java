@@ -108,4 +108,13 @@ public class BttflyCrunchAct extends AppCompatActivity {
         timerValue.setText(timeLeft);
     }
 
+
+    @Override
+    public void onBackPressed() {
+        super.onBackPressed();
+        finish();
+        Intent i = new Intent(BttflyCrunchAct.this, WorkoutAct.class);
+        startActivity(i);
+    }
+
 }

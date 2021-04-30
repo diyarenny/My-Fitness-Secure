@@ -108,4 +108,13 @@ public class ModerateLevelActivity extends AppCompatActivity {
         timerValue.setText(timeLeft);
     }
 
+
+    @Override
+    public void onBackPressed() {
+        super.onBackPressed();
+        finish();
+        Intent i = new Intent(ModerateLevelActivity.this, WorkoutAct.class);
+        startActivity(i);
+    }
+
 }

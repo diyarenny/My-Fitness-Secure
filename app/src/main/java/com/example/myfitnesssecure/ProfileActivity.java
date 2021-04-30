@@ -287,7 +287,7 @@ public class ProfileActivity extends AppCompatActivity {
         HashMap<String, Object> userMap = new HashMap<>();
         userMap.put("calorie_goal", calorie_goal);
 
-        root.child(mAuth.getCurrentUser().getUid()).setValue(userMap);
+        root.child(currentUser.getUid()).setValue(userMap);
     }
 
     //write inputted name

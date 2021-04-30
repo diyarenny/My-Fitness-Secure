@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/white"
-    tools:context=".BeginnerLevelActivity">
+    tools:context=".GluteBridgeAct">
 
     <LinearLayout
         android:id="@+id/fitone"
@@ -70,17 +70,17 @@
 
     <TextView
         android:id="@+id/subintropage"
-        android:layout_width="340dp"
-        android:layout_height="wrap_content"
+        android:layout_width="292dp"
+        android:layout_height="231dp"
         android:layout_marginStart="24dp"
+        android:layout_marginLeft="24dp"
         android:layout_marginTop="8dp"
         android:lineSpacingExtra="8dp"
         android:text="Lie face up on the floor, with your knees bent and feet flat on the ground. Lift your hips off the ground until your knees, hips and shoulders form a straight line. ... Squeeze those glutes hard and keep your abs drawn in so you don't overextend your back during the exercise."
         android:textColor="@color/grey"
         android:textSize="18sp"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/intropage"
-        android:layout_marginLeft="24dp" />
+        app:layout_constraintTop_toBottomOf="@+id/intropage" />
 
 
 

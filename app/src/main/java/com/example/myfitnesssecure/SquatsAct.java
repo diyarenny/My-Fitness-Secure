@@ -109,4 +109,13 @@ public class SquatsAct extends AppCompatActivity {
         timerValue.setText(timeLeft);
     }
 
+
+    @Override
+    public void onBackPressed() {
+        super.onBackPressed();
+        finish();
+        Intent i = new Intent(SquatsAct.this, WorkoutAct.class);
+        startActivity(i);
+    }
+
 }

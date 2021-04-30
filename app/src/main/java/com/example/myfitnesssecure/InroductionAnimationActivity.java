@@ -43,7 +43,7 @@ public class InroductionAnimationActivity extends Activity {
             public void onAnimationEnd(Animation animation) {
                 image.startAnimation(an2);
                 finish();
-                Intent i = new Intent(InroductionAnimationActivity.this, LoginActivity.class);
+                Intent i = new Intent(InroductionAnimationActivity.this, BiometricAuthActivity.class);
                 startActivity(i);
             }
 
