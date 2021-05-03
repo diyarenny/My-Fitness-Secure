@@ -244,7 +244,7 @@ public class ProfileActivity extends AppCompatActivity {
         TextView weight = (TextView) findViewById(R.id.weight);
         TextView height = (TextView) findViewById(R.id.height);
 
-        firebaseFirestore.collection("userPersonalDetails").document(userId).get()
+        root.child("userPersonalDetails").child(userId)()
                 .addOnSuccessListener(new OnSuccessListener<DocumentSnapshot>() {
                     @SuppressLint("DefaultLocale")
                     @Override

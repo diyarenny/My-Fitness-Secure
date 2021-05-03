@@ -4,6 +4,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.content.SharedPreferences;
 import android.hardware.Sensor;
 import android.hardware.SensorEvent;
@@ -35,10 +36,6 @@ public class StepCounter extends AppCompatActivity {
         bttwo = AnimationUtils.loadAnimation(this, R.anim.bttwo);
         bttfour = AnimationUtils.loadAnimation(this, R.anim.bttfour);
 
-        // assign the animations
-        stepTitle.startAnimation(bttone);
-        imageStep.startAnimation(bttone);
-        textView.startAnimation(bttone);
 
         imageStep = findViewById(R.id.imageStep);
         stepTitle = findViewById(R.id.stepTitle);
@@ -46,6 +43,10 @@ public class StepCounter extends AppCompatActivity {
         SensorManager sensorManager = (SensorManager) getSystemService(SENSOR_SERVICE);
         Sensor sensor = sensorManager.getDefaultSensor(Sensor.TYPE_ACCELEROMETER);
 
+        // assign the animations
+        stepTitle.startAnimation(bttone);
+        imageStep.startAnimation(bttone);
+        textView.startAnimation(bttone);
 
 
         SensorEventListener stepDetector = new SensorEventListener() {

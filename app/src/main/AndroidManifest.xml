@@ -63,9 +63,6 @@
         <activity android:name=".WorkoutMainActivity" />
         <activity android:name=".NotificationPosts" />
         <activity
-            android:name=".FoodActivity"
-            android:parentActivityName=".HomeActivity" />
-        <activity
             android:name=".StepCounter"
             android:parentActivityName=".HomeActivity" />
         <activity

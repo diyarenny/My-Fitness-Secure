@@ -66,20 +66,7 @@
         app:layout_constraintTop_toBottomOf="@+id/imageStep"
         tools:ignore="MissingConstraints" />
 
-    <ProgressBar
-        android:id="@+id/progressBarStepCounter"
-        style="?android:attr/progressBarStyleHorizontal"
-        android:layout_width="256dp"
-        android:layout_height="31dp"
-        android:layout_marginTop="68dp"
-        android:indeterminate="false"
-        android:maxHeight="10dip"
-        android:minHeight="20dip"
-        android:progress="50"
-        android:progressDrawable="@drawable/purpleprogress"
-        app:layout_constraintTop_toBottomOf="@+id/stepNum"
-        tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteX="78dp" />
+
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

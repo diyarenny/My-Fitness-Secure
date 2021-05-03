@@ -338,7 +338,7 @@ public class HomeActivity extends AppCompatActivity
 
             //getSupportActionBar().setTitle("Step Counter");
             FirebaseAuth.getInstance().signOut();
-            Intent stepsActivity = new Intent(getApplicationContext(),ActivityGymsNearMyLocation.class);
+            Intent stepsActivity = new Intent(getApplicationContext(),StepCounter.class);
             startActivity(stepsActivity);
             finish();
         }
